@@ -36,7 +36,7 @@ with st.echo(code_location='below'):
     col3.write("")
     login = col3.button("Log In", help="Log in with your username and password", on_click=log_in(user, user_pw))
     
-    start = st.button("Start break", help="Start a new coffee break", disabled = True, on_click=start_break())
+    start = st.button("Start break", help="Start a new coffee break", on_click=start_break())
     
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
