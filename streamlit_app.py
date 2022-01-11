@@ -12,10 +12,7 @@ from datetime import date
 """
 # Welcome to our coffee list!
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-In the meantime, below is an example of what you can do with just a few lines of code:
+In order to submit a coffee break, you need to be logged in with your username and password. Pauses are then automatically generated for you.
 """
 
 def start_break():
