@@ -19,6 +19,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 """
 
 def start_break():
+    return
     
 def log_in(user, user_pw):
     st.write(user)
