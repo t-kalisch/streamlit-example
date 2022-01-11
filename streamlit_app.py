@@ -23,7 +23,7 @@ with st.echo(code_location='below'):
     
     col1, buff1, col2, buff2, col3 = st.columns([2,1,2,1,1])
     user = col1.text_input('Username:')
-    user_pw = col2.text_input('Password:')
+    user_pw = col2.text_input('Password:', type="password")
     login = col3.button("Log In", help="Log in with your username and password")
     
     start = st.button("Start break", help="Start a new coffee break", on_click=start_break())
