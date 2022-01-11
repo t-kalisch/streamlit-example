@@ -22,7 +22,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 with st.echo(code_location='below'):
     user = st.text_input('Username:')
     
-    col1, buff, col2 = st.beta_columns([1,3,1])
+    col1, buff, col2 = st.columns([1,3,1])
     col1.text_input('Username:')
     col2.text_input('Password:')
     
