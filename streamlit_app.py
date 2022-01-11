@@ -23,6 +23,7 @@ with st.echo(code_location='below'):
     user = st.text_input('Username:')
     
     col1, buff, col2 = st.columns([1,3,1])
+    buff.text_input('a smaller window')
     col1.text_input('Username:')
     col2.text_input('Password:')
     
