@@ -1,4 +1,4 @@
 altair
 pandas
 streamlit
-mysql-connector-python==x.x.x
+#mysql-connector-python==x.x.x
