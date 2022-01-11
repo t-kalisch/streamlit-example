@@ -21,12 +21,13 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 with st.echo(code_location='below'):
     
-    buff1, col1, buff2, col2, buff3 = st.columns([1,2,1,2,1])
-    col2.text_input('a smaller window')
+    col1, buff1, col2, buff2, col3 = st.columns([2,1,2,1,1])
     user = col1.text_input('Username:')
     user_pw = col2.text_input('Password:')
+    login = col3.button("Log In", help="Log in with your username and password)
     
     start = st.button("Start break", help="Start a new coffee break", on_click=start_break())
+    
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
 
