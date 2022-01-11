@@ -18,13 +18,19 @@ forums](https://discuss.streamlit.io).
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
+def start_break():
+    
+def log_in(user, user_pw):
+    st.write(user)
+    st.write(user_pw)
+
 
 with st.echo(code_location='below'):
     
     col1, buff1, col2, buff2, col3 = st.columns([2,1,2,1,1])
-    user = col1.text_input('Username:')
-    user_pw = col2.text_input('Password:', type="password")
-    login = col3.button("Log In", help="Log in with your username and password")
+    user = col1.text_input(placeholder="Username")
+    user_pw = col2.text_input(type="password", placeholder="Password")
+    login = col3.button("Log In", help="Log in with your username and password", on_click=log_in(user, user_pw))
     
     start = st.button("Start break", help="Start a new coffee break", on_click=start_break())
     
