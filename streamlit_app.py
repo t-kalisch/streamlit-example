@@ -20,7 +20,10 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 
 with st.echo(code_location='below'):
-    start_break = st.button("Start break")
+    user = st.text_input('Username:')
+    if sentence:
+        st.write(my_model.predict(sentence))
+    start = st.button("Start break", help="Start a new coffee break", on_click=start_break())
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
 
