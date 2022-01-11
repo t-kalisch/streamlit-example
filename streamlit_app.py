@@ -29,7 +29,7 @@ def log_in(user, user_pw):
 with st.echo(code_location='below'):
     
     col1, buff1, col2, buff2, col3 = st.columns([2,1,2,1,1])
-    user = col1.text_input( placeholder="Username")
+    user = col1.text_input(type=None placeholder="Username")
     user_pw = col2.text_input( type="password", placeholder="Password")
     login = col3.button("Log In", help="Log in with your username and password", on_click=log_in(user, user_pw))
     
