@@ -54,7 +54,7 @@ with st.echo(code_location='below'):
 
     
     #if cpm_active==True:
-    df = pd.DataFrame(monthly_coffees, columns=names)
+    df = pd.DataFrame(monthly_coffees, columns=months)
     st.line_chart(data=df, width=0, height=0, use_container_width=True)
    
     
