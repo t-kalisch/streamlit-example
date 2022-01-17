@@ -61,9 +61,9 @@ with st.echo(code_location='below'):
     #cpm = st.write(monthly_coffees)
 
     
-    #if cpm_active==True:
-    df = pd.DataFrame(monthly_coffees1, columns=names)
-    st.line_chart(data=df, width=0, height=0, use_container_width=True)
+    if cpm_active==True:
+        df = pd.DataFrame(monthly_coffees1, columns=names)
+        st.line_chart(data=df, width=0, height=0, use_container_width=True)
    
     
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
