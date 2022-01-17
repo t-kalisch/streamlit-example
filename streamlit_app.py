@@ -50,7 +50,7 @@ for i in range(15):
 
 for i in range(15):
     temp=[]
-    for j in range(len(cumulatid_coffees)):
+    for j in range(len(cumulated_coffees)):
         temp.append(cumulated_coffees[j][i])
     cumulated_coffees1.append(temp)
     
