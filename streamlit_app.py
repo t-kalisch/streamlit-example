@@ -11,7 +11,8 @@ from datetime import date
 #import matplotlib.pyplot as plt
 
 #cpm_active=False
-global cpm_active = False
+global cpm_active
+cpm_active=False
 
 """
 # Welcome to our coffee list!
