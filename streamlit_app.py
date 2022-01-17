@@ -63,10 +63,10 @@ if coffees_monthly :
     
 coffees_total = st.sidebar.checkbox("Total coffees")
 if coffees_total:
-    st.header("Total coffees")
     fig1, ax1 = plt.subplots()
     ax1.pie(total_coffees, labels=names, autopct='%1.1f%%',shadow=True, startangle=90)
-    ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+    ax1.axis('equal')
+    st.header("Total coffees")
     st.pyplot(fig1)
 
 
