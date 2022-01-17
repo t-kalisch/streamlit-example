@@ -30,6 +30,7 @@ def log_in(user, user_pw):
 
 
 def coffees_per_month():
+    global cpm_active
     if cpm_active==False:
         cpm_active=True
     elif cpm_active==True:
