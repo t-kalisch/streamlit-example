@@ -27,8 +27,8 @@ def log_in(user, user_pw):
     #start.disabled = False
     
 st.sidebar.header("Sign in:")
-username = st.sidebar.text_input(label="", placeholder="Username")
-user_password = st.sidebar.text_input(label="", type="password", placeholder="Password")
+user = st.sidebar.text_input(label="", placeholder="Username")
+user_pw = st.sidebar.text_input(label="", type="password", placeholder="Password")
 login = st.sidebar.button("Log In", help="Log in with your username and password", on_click=log_in(user, user_pw))
 st.sidebar.title("Available diagrams:")
 
