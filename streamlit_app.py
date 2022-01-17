@@ -67,7 +67,7 @@ if coffees_total:
     df = pd.DataFrame(total_coffees, columns=names)
    
     fig1, ax1 = plt.subplots()
-    ax1.pie(total_coffees, labels=names, autopct='%1.1f%%',shadow=True, startangle=90)
+    ax1.pie(total_coffees, labels=name_labels, autopct='%1.1f%%',shadow=True, startangle=90)
     ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
     st.pyplot(fig1)
 
