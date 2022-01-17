@@ -45,13 +45,13 @@ cumulated_coffees=[[19,28,44,63,92,121,153,183,197,238,277,312,349,372,372],[15,
 for i in range(15):
     temp=[]
     for j in range(len(monthly_coffees)):
-        temp.append(monthly_coffees[i][j])
+        temp.append(monthly_coffees[j][i])
     monthly_coffees1.append(temp)
 
 for i in range(15):
     temp=[]
     for j in range(len(cumulated_coffees)):
-        temp.append(cumulated_coffees[j][i])
+        temp.append(cumulated_coffees[i][j])
     cumulated_coffees1.append(temp)
     
 
