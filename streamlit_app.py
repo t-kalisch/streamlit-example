@@ -39,7 +39,7 @@ monthly_coffees=[[19, 9, 16, 19, 29, 31, 32, 30, 14, 41, 39, 34, 37, 24, 10], [1
 names=['TK','PB','NV','DB','FLG','SHK','TB','TT','RS']
 months=["Nov '20", "Dec '20", "Jan '21", "Feb '21", "Mar '21", "Apr '21", "May '21", "Jun '21", "Jul '21", "Aug '21", "Sep '21", "Oct '21", "Nov '21", "Dec '21", "Jan '22"]
 
-
+st.set_page_config(initial_sidebar_state="expanded")
 with st.echo(code_location='below'):
     
     col1, buff1, col2, buff2, col3 = st.columns([2,1,2,1,1])
