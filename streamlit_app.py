@@ -40,12 +40,7 @@ with st.echo(code_location='below'):
     start = st.button("Start break", help="Start a new coffee break", on_click=start_break())
    
 
-    dataframe = pd.DataFrame(monthly_coffees,
-    columns = ('col %d' % i
-    for i in range(len(monthly_coffees))))
-    dataframe
-    st.write('This is a line_chart.')
-    st.line_chart(dataframe)
+    st.line_chart(monthly_coffees)
     
    
     
