@@ -63,11 +63,13 @@ with st.echo(code_location='below'):
     #start = st.button("Start break", help="Start a new coffee break", on_click=start_break())
     #cpm = st.write(monthly_coffees)
 
-    
-    if cpm_active==True:
-        st.write("True")
+    if press_button :
         df = pd.DataFrame(monthly_coffees1, columns=names)
         st.line_chart(data=df, width=0, height=0, use_container_width=True)
+    #if cpm_active==True:
+    #    st.write("True")
+    #    df = pd.DataFrame(monthly_coffees1, columns=names)
+    #    st.line_chart(data=df, width=0, height=0, use_container_width=True)
    
     
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
@@ -93,10 +95,8 @@ with st.echo(code_location='below'):
 
 coffees_p_M = st.sidebar.button("Coffees per month", help="Show the coffees per month per person", on_click=coffees_per_month())
 add_selectbox = st.sidebar.selectbox("How would you like to be contacted?",("Email", "Home phone", "Mobile phone"))   
-press_button = st.sidebar.checkbox("Press it Now!")
-if press_button :
-    # ask for the value
-    th = st.sidebar.number_input("Please enter the values from 0 - 10",)
+press_button = st.sidebar.checkbox("Coffees per month")
+
 
                           
     
