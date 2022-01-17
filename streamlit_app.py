@@ -53,6 +53,7 @@ for i in range(14):
     
 press_button = st.sidebar.checkbox("Coffees per month")
 if press_button :
+    st.header("Coffees per month per person")
     df = pd.DataFrame(monthly_coffees1, columns=names)
     st.line_chart(data=df, width=0, height=0, use_container_width=True)
 
