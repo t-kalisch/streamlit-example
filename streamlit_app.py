@@ -43,7 +43,7 @@ with st.echo(code_location='below'):
     #for i in range(len(monthly_coffees)):
     #    st.line_chart(monthly_coffees[i])
     
-    df = pd.DataFrame(monthly_coffees, columns=months)
+    data = pandas.DataFrame(monthly_coffees, columns=months)
     st.write(df)
     st.line_chart(data=df, width=0, height=0, use_container_width=True)
    
