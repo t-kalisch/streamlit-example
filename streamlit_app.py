@@ -85,9 +85,8 @@ with st.echo(code_location='below'):
         .mark_circle(color='#0068c9', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
 
-with st.sidebar:
-    coffees_p_M = button("Coffees per month", help="Show the coffees per month per person", on_click=coffees_per_month())
-#add_selectbox = st.sidebar.selectbox("How would you like to be contacted?",("Email", "Home phone", "Mobile phone"))                            
+coffees_p_M = st.sidebar.button("Coffees per month", help="Show the coffees per month per person", on_click=coffees_per_month())
+add_selectbox = st.sidebar.selectbox("How would you like to be contacted?",("Email", "Home phone", "Mobile phone"))                            
 
                           
     
