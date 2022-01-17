@@ -39,7 +39,7 @@ with st.echo(code_location='below'):
     
     start = st.button("Start break", help="Start a new coffee break", on_click=start_break())
    
-
+    st.write(monthly_coffees)
     st.line_chart(monthly_coffees)
     
    
