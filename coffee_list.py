@@ -5,13 +5,11 @@ import pandas as pd
 import streamlit as st
 import numpy as npy
 import matplotlib.pyplot as plt
-#import plotly.express as px
-
-
 import datetime
 from datetime import date
 #from data_collection import *
-#import matplotlib.pyplot as plt
+
+st.set_page_config(page_title="Coffee list",)
 
 
 """
