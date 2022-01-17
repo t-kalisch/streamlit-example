@@ -10,8 +10,8 @@ from datetime import date
 #from data_collection import *
 #import matplotlib.pyplot as plt
 
-cpm_active=False
-global cpm_active
+#cpm_active=False
+global cpm_active = False
 
 """
 # Welcome to our coffee list!
