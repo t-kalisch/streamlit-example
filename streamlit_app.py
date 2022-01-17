@@ -44,6 +44,7 @@ for i in range(14):
     for j in range(len(monthly_coffees)):
         temp.append(monthly_coffees[j][i])
     monthly_coffees1.append(temp)
+    print(monthly_coffeees1)
 
 
 with st.echo(code_location='below'):
