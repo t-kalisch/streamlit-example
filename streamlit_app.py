@@ -12,8 +12,6 @@ from datetime import date
 #import matplotlib.pyplot as plt
 
 
-cpm_active=False
-
 """
 # Welcome to our coffee list!
 
@@ -27,18 +25,9 @@ def log_in(user, user_pw):
     st.write(user)
     st.write(user_pw)
     #start.disabled = False
-
-
-def coffees_per_month():
-    global cpm_active
-    if cpm_active==False:
-        cpm_active=True
-        print("True")
-    elif cpm_active==True:
-        cpm_active=False
-        print("False")
     
-    
+st.sidebar.write("Available diagrams:")
+
 
 monthly_coffees1=[]
 monthly_coffees=[[19, 9, 16, 19, 29, 31, 32, 30, 14, 41, 39, 34, 37, 24, 10], [15, 6, 6, 20, 29, 20, 24, 25, 29, 22, 32, 30, 35, 18, 12], [13, 6, 12, 16, 25, 35, 28, 37, 31, 27, 36, 30, 22, 14, 0], [10, 3, 7, 12, 27, 36, 37, 15, 22, 44, 10, 6, 4, 7, 1], [18, 1, 18, 21, 34, 35, 35, 26, 21, 43, 43, 27, 36, 22, 9], [0, 0, 0, 0, 19, 27, 23, 9, 5, 16, 22, 17, 26, 17, 0], [0, 0, 0, 0, 0, 12, 18, 8, 5, 13, 2, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0]]
