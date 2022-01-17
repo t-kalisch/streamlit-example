@@ -4,6 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 import numpy as npy
+from streamlit_toggle import st_toggleswitch
 
 import datetime
 from datetime import date
