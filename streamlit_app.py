@@ -10,6 +10,9 @@ from datetime import date
 #from data_collection import *
 #import matplotlib.pyplot as plt
 
+cpm_active=False
+
+
 """
 # Welcome to our coffee list!
 
@@ -24,7 +27,7 @@ def log_in(user, user_pw):
     st.write(user_pw)
     #start.disabled = False
 
-cpm_active=False
+
 def coffees_per_month():
     if cpm_active==False:
         cpm_active=True
