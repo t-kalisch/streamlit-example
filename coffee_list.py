@@ -9,8 +9,8 @@ import datetime
 from datetime import date
 #from data_collection import *
 
-st.set_page_config(page_title="Coffee list",page_icon="chart_with_upwards_trend",layout=wide)
 
+st.set_page_config(page_title="Coffee list",page_icon="chart_with_upwards_trend",layout=wide) 
 
 """
 # Welcome to our coffee list!
@@ -18,9 +18,7 @@ st.set_page_config(page_title="Coffee list",page_icon="chart_with_upwards_trend"
 In order to submit a coffee break, you need to be logged in with your username and password. Pauses are then automatically generated for you.
 """
 
-def start_break():
-    return
-    
+   
 def log_in(user, user_pw):
     st.write(user)
     st.write(user_pw)
