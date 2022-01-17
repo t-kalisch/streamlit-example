@@ -26,7 +26,9 @@ def log_in(user, user_pw):
     st.write(user_pw)
     #start.disabled = False
     
-st.sidebar.header("Available diagrams:")
+st.sidebar.header("Sign in:")
+st.sidebar.text_input(label="", placeholder="Username")
+st.sidebar.text_input(label="", type="password", placeholder="Password")
 st.sidebar.title("Available diagrams:")
 
 monthly_coffees1=[]
