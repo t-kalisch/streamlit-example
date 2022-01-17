@@ -3,6 +3,7 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
+import numpy as npy
 
 import datetime
 from datetime import date
@@ -23,6 +24,9 @@ def log_in(user, user_pw):
     st.write(user_pw)
     #start.disabled = False
 
+montly_coffees=[[19, 9, 16, 19, 29, 31, 32, 30, 14, 41, 39, 34, 37, 24, 10], [15, 6, 6, 20, 29, 20, 24, 25, 29, 22, 32, 30, 35, 18, 12], [13, 6, 12, 16, 25, 35, 28, 37, 31, 27, 36, 30, 22, 14, 0], [10, 3, 7, 12, 27, 36, 37, 15, 22, 44, 10, 6, 4, 7, 1], [18, 1, 18, 21, 34, 35, 35, 26, 21, 43, 43, 27, 36, 22, 9], [0, 0, 0, 0, 19, 27, 23, 9, 5, 16, 22, 17, 26, 17, 0], [0, 0, 0, 0, 0, 12, 18, 8, 5, 13, 2, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0]]
+    
+    
 
 with st.echo(code_location='below'):
     
@@ -34,6 +38,16 @@ with st.echo(code_location='below'):
     login = col3.button("Log In", help="Log in with your username and password", on_click=log_in(user, user_pw))
     
     start = st.button("Start break", help="Start a new coffee break", on_click=start_break())
+   
+
+    dataframe = pd.DataFrame(monthly_coffees,
+    columns = ('col %d' % i
+    for i in range(len(monthly_coffees))))
+    dataframe
+    st.write('This is a line_chart.')
+    st.line_chart(dataframe)
+    
+   
     
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
