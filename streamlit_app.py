@@ -81,7 +81,7 @@ with st.echo(code_location='below'):
         .encode(x='x:Q', y='y:Q'))
 
 #with st.sidebar:
-st.sidebar.coffees_p_m = st.button("Coffees per month", help="Show the coffees per month per person", on_click=coffees_per_month())
+#st.sidebar.coffees_p_m = st.button("Coffees per month", help="Show the coffees per month per person", on_click=coffees_per_month())
                             
 
                           
