@@ -27,7 +27,7 @@ def log_in(user, user_pw):
 monthly_coffees=[[19, 9, 16, 19, 29, 31, 32, 30, 14, 41, 39, 34, 37, 24, 10], [15, 6, 6, 20, 29, 20, 24, 25, 29, 22, 32, 30, 35, 18, 12], [13, 6, 12, 16, 25, 35, 28, 37, 31, 27, 36, 30, 22, 14, 0], [10, 3, 7, 12, 27, 36, 37, 15, 22, 44, 10, 6, 4, 7, 1], [18, 1, 18, 21, 34, 35, 35, 26, 21, 43, 43, 27, 36, 22, 9], [0, 0, 0, 0, 19, 27, 23, 9, 5, 16, 22, 17, 26, 17, 0], [0, 0, 0, 0, 0, 12, 18, 8, 5, 13, 2, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0]]
 names=['TK','PB','NV','DB','FLG','SHK','TB','TT','RS']
 months=["Nov '20", "Dec '20", "Jan '21", "Feb '21", "Mar '21", "Apr '21", "May '21", "Jun '21", "Jul '21", "Aug '21", "Sep '21", "Oct '21", "Nov '21", "Dec '21", "Jan '22"]
-    
+coffees_per_month_active=False
 
 with st.echo(code_location='below'):
     
@@ -43,9 +43,9 @@ with st.echo(code_location='below'):
     #for i in range(len(monthly_coffees)):
     #    st.line_chart(monthly_coffees[i])
     
-    df = pd.DataFrame(monthly_coffees, columns=months)
-    st.write(df)
-    st.line_chart(data=df, width=0, height=0, use_container_width=True)
+    if coffees_per_month_active==True:
+        df = pd.DataFrame(monthly_coffees, columns=names)
+        st.line_chart(data=df, width=0, height=0, use_container_width=True)
    
     
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
@@ -68,3 +68,14 @@ with st.echo(code_location='below'):
     st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
         .mark_circle(color='#0068c9', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
+
+with st.sidebar:
+    coffees_p_m = st.button(button("Coffees per month", help="Show the coffees per month per person", on_click=coffees_per_month()))
+                            
+def coffees_per_month():
+    if coffees_per_month_active==False:
+        coffees_per_month_active=True
+    elif coffees_per_month_active==True:
+        coffees_per_month_active=False
+                          
+    
