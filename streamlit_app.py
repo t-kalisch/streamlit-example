@@ -38,11 +38,11 @@ with st.echo(code_location='below'):
     login = col3.button("Log In", help="Log in with your username and password", on_click=log_in(user, user_pw))
     
     #start = st.button("Start break", help="Start a new coffee break", on_click=start_break())
-    st.write(monthly_coffees)
     #cpm = st.write(monthly_coffees)
     #for i in range(len(monthly_coffees)):
     #    st.line_chart(monthly_coffees[i])
     df = pd.DataFrame(monthly_coffees)
+    st.write(df)
     st.line_chart(data=df, width=0, height=0, use_container_width=True)
    
     
