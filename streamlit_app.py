@@ -43,7 +43,7 @@ for i in range(14):
     temp=[]
     for j in range(len(monthly_coffees)):
         temp.append(monthly_coffees[j][i])
-        monthly_coffees1.append(temp)
+    monthly_coffees1.append(temp)
 
 
 with st.echo(code_location='below'):
@@ -61,7 +61,6 @@ with st.echo(code_location='below'):
     
     #if cpm_active==True:
     df = pd.DataFrame(monthly_coffees1, columns=names)
-    st.write(monthly_coffees1)
     st.line_chart(data=df, width=0, height=0, use_container_width=True)
    
     
