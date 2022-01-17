@@ -10,8 +10,7 @@ from datetime import date
 #from data_collection import *
 #import matplotlib.pyplot as plt
 
-#cpm_active=False
-global cpm_active
+
 cpm_active=False
 
 """
@@ -62,6 +61,7 @@ with st.echo(code_location='below'):
 
     
     if cpm_active==True:
+        st.write("True")
         df = pd.DataFrame(monthly_coffees1, columns=names)
         st.line_chart(data=df, width=0, height=0, use_container_width=True)
    
