@@ -88,7 +88,7 @@ with st.echo(code_location='below'):
 
 #with st.sidebar:
 #st.sidebar.coffees_p_m = st.button("Coffees per month", help="Show the coffees per month per person", on_click=coffees_per_month())
-                            
+add_selectbox = st.sidebar.selectbox("How would you like to be contacted?",("Email", "Home phone", "Mobile phone"))                            
 
                           
     
