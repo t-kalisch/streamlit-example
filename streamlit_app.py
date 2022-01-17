@@ -28,11 +28,11 @@ def log_in(user, user_pw):
     #start.disabled = False
 
 
-#def coffees_per_month():
-#    if cpm_active==False:
-#        cpm_active=True
-#    elif cpm_active==True:
-#        cpm_active=False
+def coffees_per_month():
+    if cpm_active==False:
+        cpm_active=True
+    elif cpm_active==True:
+        cpm_active=False
     
 
 monthly_coffees1=[]
