@@ -48,7 +48,7 @@ for i in range(15):
         temp.append(monthly_coffees[j][i])
     monthly_coffees1.append(temp)
 
-for i in range(14):
+for i in range(15):
     temp=[]
     for j in range(len(cumulated_coffees)):
         temp.append(cumulated_coffees[j][i])
