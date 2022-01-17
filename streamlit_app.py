@@ -51,7 +51,7 @@ with st.echo(code_location='below'):
     #for i in range(len(monthly_coffees)):
     #    st.line_chart(monthly_coffees[i])
     
-    if coffees_per_month_active==True:
+    if cpm_active==True:
         df = pd.DataFrame(monthly_coffees, columns=names)
         st.line_chart(data=df, width=0, height=0, use_container_width=True)
    
