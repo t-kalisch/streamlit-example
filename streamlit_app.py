@@ -42,7 +42,7 @@ months=["Nov '20", "Dec '20", "Jan '21", "Feb '21", "Mar '21", "Apr '21", "May '
 for i in range(14):
     temp=[]
     for j in range(len(monthly_coffees)):
-        temp.append(monthly_coffees[i][j])
+        temp.append(monthly_coffees[j][i])
 monthly_coffees1.append(temp)
 
 
