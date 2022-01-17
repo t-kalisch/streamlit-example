@@ -37,10 +37,11 @@ with st.echo(code_location='below'):
     col3.write("")
     login = col3.button("Log In", help="Log in with your username and password", on_click=log_in(user, user_pw))
     
-    start = st.button("Start break", help="Start a new coffee break", on_click=start_break())
+    #start = st.button("Start break", help="Start a new coffee break", on_click=start_break())
    
-    st.write(monthly_coffees)
-    st.line_chart(monthly_coffees)
+    #cpm = st.write(monthly_coffees)
+    for i in range(len(monthly_coffees):
+        st.line_chart(monthly_coffees[i])
     
    
     
@@ -60,7 +61,7 @@ with st.echo(code_location='below'):
         x = radius * math.cos(angle)
         y = radius * math.sin(angle)
         data.append(Point(x, y))
-
+    print(data)
     st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
         .mark_circle(color='#0068c9', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
