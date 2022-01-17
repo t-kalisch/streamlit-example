@@ -40,8 +40,8 @@ with st.echo(code_location='below'):
     #start = st.button("Start break", help="Start a new coffee break", on_click=start_break())
    
     #cpm = st.write(monthly_coffees)
-    for i in range(len(monthly_coffees):
-        st.line_chart(monthly_coffees[i])
+    #for i in range(len(monthly_coffees)):
+    #    st.line_chart(monthly_coffees[i])
     
    
     
