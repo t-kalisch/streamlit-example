@@ -41,7 +41,7 @@ names=['TK','PB','NV','DB','FLG','SHK','TB','TT','RS']
 months=["Nov '20", "Dec '20", "Jan '21", "Feb '21", "Mar '21", "Apr '21", "May '21", "Jun '21", "Jul '21", "Aug '21", "Sep '21", "Oct '21", "Nov '21", "Dec '21", "Jan '22"]
 for i in range(15):
     for j in range(9):
-        temp.append(monthly_coffees[i][j])
+        temp.append(monthly_coffees[j][i])
 monthly_coffees1.append(temp)
 
 
