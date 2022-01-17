@@ -12,7 +12,7 @@ from datetime import date
 
 
 cpm_active=False
-st.write("init_False")
+
 """
 # Welcome to our coffee list!
 
@@ -32,10 +32,10 @@ def coffees_per_month():
     global cpm_active
     if cpm_active==False:
         cpm_active=True
-        st.write("True")
+        print("True")
     elif cpm_active==True:
         cpm_active=False
-        st.write("False")
+        print("False")
     
     
 
