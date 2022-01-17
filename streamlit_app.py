@@ -51,6 +51,12 @@ for i in range(15):
     monthly_coffees1.append(temp)
     cumulated_coffees1.append(temp)
 
+for i in range(15):
+    temp=[]
+    for j in range(len(cumulatid_coffees)):
+        temp1.append(cumulated_coffees[j][i])
+    cumulated_coffees1.append(temp)
+    
 
 #col1, buff1, col2, buff2, col3 = st.columns([2,1,2,1,1])
 #user = col1.text_input(label="", placeholder="User")
