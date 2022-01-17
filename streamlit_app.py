@@ -43,8 +43,8 @@ for i in range(14):
 
 
 col1, buff1, col2, buff2, col3 = st.columns([2,1,2,1,1])
-user = col1.text_input(label="", placeholder="Username")
-user_pw = col2.text_input(label="", type="password", placeholder="Password")
+user = col1.text_input(label="", placeholder="User")
+user_pw = col2.text_input(label="", type="password", placeholder="pw")
 col3.write("")
 col3.write("")
 login = col3.button("Log In", help="Log in with your username and password", on_click=log_in(user, user_pw))
