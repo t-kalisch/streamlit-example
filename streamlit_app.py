@@ -44,7 +44,6 @@ for i in range(14):
     for j in range(len(monthly_coffees)):
         temp.append(monthly_coffees[j][i])
     monthly_coffees1.append(temp)
-    print(monthly_coffees)
 
 
 with st.echo(code_location='below'):
@@ -87,7 +86,7 @@ with st.echo(code_location='below'):
         .encode(x='x:Q', y='y:Q'))
 
 with st.sidebar:
-    button("Coffees per month", help="Show the coffees per month per person", on_click=coffees_per_month())
+    coffees_p_M = button("Coffees per month", help="Show the coffees per month per person", on_click=coffees_per_month())
 #add_selectbox = st.sidebar.selectbox("How would you like to be contacted?",("Email", "Home phone", "Mobile phone"))                            
 
                           
