@@ -4,7 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 import numpy as npy
-from streamlit_toggle import st_toggleswitch
+
 
 import datetime
 from datetime import date
@@ -92,7 +92,11 @@ with st.echo(code_location='below'):
         .encode(x='x:Q', y='y:Q'))
 
 coffees_p_M = st.sidebar.button("Coffees per month", help="Show the coffees per month per person", on_click=coffees_per_month())
-add_selectbox = st.sidebar.selectbox("How would you like to be contacted?",("Email", "Home phone", "Mobile phone"))                            
+add_selectbox = st.sidebar.selectbox("How would you like to be contacted?",("Email", "Home phone", "Mobile phone"))   
+ press_button = st.checkbox("Press it Now!")
+    if press_button :
+        # ask for the value
+        th = st.sidebar.number_input("Please enter the values from 0 - 10",)
 
                           
     
